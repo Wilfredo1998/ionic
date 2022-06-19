@@ -1,0 +1,90 @@
+/*
+ * App Global CSS
+ * ----------------------------------------------------------------------------
+ * Put style rules here that you want to apply globally. These styles are for
+ * the entire app and not just one component. Additionally, this file can be
+ * used as an entry point to import other CSS/Sass files to be included in the
+ * output CSS.
+ * For more information on global stylesheets, visit the documentation:
+ * https://ionicframework.com/docs/layout/global-stylesheets
+ */
+
+/* Core CSS required for Ionic components to work properly */
+@import "~@ionic/angular/css/core.css";
+
+/* Basic CSS for apps built with Ionic */
+@import "~@ionic/angular/css/normalize.css";
+@import "~@ionic/angular/css/structure.css";
+@import "~@ionic/angular/css/typography.css";
+@import '~@ionic/angular/css/display.css';
+
+/* Optional CSS utils that can be commented out */
+@import "~@ionic/angular/css/padding.css";
+@import "~@ionic/angular/css/float-elements.css";
+@import "~@ionic/angular/css/text-alignment.css";
+@import "~@ionic/angular/css/text-transformation.css";
+@import "~@ionic/angular/css/flex-utils.css";
+@import url('https://fonts.googleapis.com/css2?family=Nuosu+SIL&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nuosu+SIL&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nuosu+SIL&family=Open+Sans&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nuosu+SIL&family=Open+Sans&family=Poppins&family=Roboto&display=swap');
+strong{
+    font-size: 21px;
+  }
+h1,h2,h3,h4{
+  font-family: 'Nuosu SIL';
+}
+
+ion-input [type="text"], ion-input[type="password"], ion-input[type="email"], ion-select, p, ion-col, .Negro{
+  font-family: 'Poppins';
+}
+
+ion-content{
+  background: #f2feff;
+}
+
+.rolesH{
+  font-size: 35px;
+}
+
+.h4Especial{
+  font-size: 23px;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  margin-left: 15px;
+  color: #004aad;
+}
+
+ion-col{
+  border: 1px solid #000;
+}
+
+ion-grid{
+  margin-bottom: 35px;
+}
+
+.Negro{
+  font-weight: bold;
+  text-align: center;
+}
+
+.sizeBottomP{
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+ 
+}
+
+.p{
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+p{
+  text-align: center;
+}
+
+ion-input[type="text"], ion-input[type="password"], ion-input[type="email"], ion-select{
+  border-bottom: 1px solid #5F87C6;
+}

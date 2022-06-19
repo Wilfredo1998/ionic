@@ -1,0 +1,47 @@
+
+<ion-header>
+  <ion-toolbar color="secondary">
+    <ion-title style="color: white ;">Registro</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content color="light">
+  <h4 style="text-align: center; margin-top: 55px; margin-bottom: 67px;" class="RolesH">Logo</h4>
+  <ion-item color="light">
+    <ion-label position="floating"><strong>Nombre</strong></ion-label>
+    <ion-input [(ngModel)]="nombreVal" type="text" required></ion-input>
+  </ion-item>
+  <ion-item color="light">
+    <ion-label position="floating"><strong>Apellido</strong></ion-label>
+    <ion-input [(ngModel)]="apellidoVal" type="text" required></ion-input>
+  </ion-item>
+  <ion-item color="light">
+    <ion-label position="floating"><strong>Correo Electrónico</strong></ion-label>
+    <ion-input [(ngModel)]="emailVal" type="email" required></ion-input>
+  </ion-item>
+  <!--ion-item color="light">
+      <ion-label position="floating"><strong>Rol</strong></ion-label>
+      <ion-select  multiple="true" required>
+        <ion-select-option value="administrador">Administrador</ion-select-option>
+        <ion-select-option value="soporte">Soporte</ion-select-option>
+      </ion-select>
+    </ion-item-->
+  <ion-item color="light">
+    <ion-label position="floating"><strong>N. De La Institución</strong></ion-label>
+    <ion-input [(ngModel)]="niVal" type="text" required></ion-input>
+  </ion-item>
+  <ion-item color="light">
+    <ion-label position="floating"><strong>Contraseña</strong></ion-label>
+    <ion-input [(ngModel)]="passVal"  type="password" required></ion-input>
+  </ion-item>
+  <ion-item color="light">
+    <ion-label position="floating"><strong>Confirmar Contraseña</strong></ion-label>
+    <ion-input  type="password" required></ion-input>
+  </ion-item>
+  <ion-button size="large" (click)="onClick()" color="primary" style="margin-top: 60px; margin-bottom: 50px; color: white;" shape="round"  expand="block">
+    Registrarse
+  </ion-button>
+  <ion-button [routerLink]="['/home']" expand="block" fill="clear" style="margin-bottom: 25px ;" shape="round">
+    ¿Ya tienes una cuenta? Inicia Sesión
+  </ion-button>
+</ion-content>

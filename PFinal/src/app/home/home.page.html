@@ -1,0 +1,25 @@
+
+<ion-header>
+  <ion-toolbar color="secondary">
+    <ion-title style="color: white;">Login</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" color="light">
+  <h1 style="text-align: center; margin-top: 55px; font-size: 50px; margin-bottom: 67px;">Logo</h1>
+
+  <ion-item color="light">
+    <ion-label position="floating"><strong>Usuario</strong></ion-label>
+    <ion-input type="text" required></ion-input>
+  </ion-item>
+  <ion-item color="light">
+    <ion-label position="floating"><strong>Contraseña</strong></ion-label>
+    <ion-input type="password" required></ion-input>
+  </ion-item>
+  <ion-button size="large" (click)="onClick()" color="primary" style="margin-top: 60px; margin-bottom: 50px; color: white;" shape="round"  expand="block">
+    Iniciar Sesión
+  </ion-button>
+ <ion-button [routerLink]="['/register']" expand="block" fill="clear" shape="round">
+   ¿No tienes una cuenta? Regístrate
+ </ion-button>
+</ion-content>

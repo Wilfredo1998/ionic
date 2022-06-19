@@ -1,0 +1,8 @@
+{
+  "name": "PFinal",
+  "integrations": {
+    "capacitor": {},
+    "cordova": {}
+  },
+  "type": "angular"
+}
